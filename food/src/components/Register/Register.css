@@ -1,0 +1,48 @@
+.register-page-wrapper {
+  background: #f4f7f6;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-image-register {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+.register-heading {
+  color: #2d3436;
+  letter-spacing: 0.05rem;
+}
+
+.btn-register {
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  background-color: #ff4c24; /* Màu cam đặc trưng của app */
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #e03d1a;
+  box-shadow: 0 4px 15px rgba(255, 76, 36, 0.3);
+  transform: translateY(-1px);
+}
+
+.form-control:focus {
+  border-color: #ff4c24;
+  box-shadow: 0 0 0 0.25rem rgba(255, 76, 36, 0.15);
+}
+
+/* Hiệu ứng mượt mà khi chuyển đổi giữa các trang */
+.card {
+  border-radius: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,40 @@
+.place-order-container {
+    min-height: 100vh;
+}
+
+.payment-options {
+    background-color: #f8f9fa;
+}
+
+.form-check {
+    cursor: pointer;
+    padding: 10px 35px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.form-check:hover {
+    background-color: #e9ecef;
+}
+
+.form-check-input:checked + .form-check-label {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.btn-primary {
+    background-color: #ff4c24;
+    border: none;
+    padding: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #e54420;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 76, 36, 0.3);
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}

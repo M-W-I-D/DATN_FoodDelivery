@@ -1,0 +1,55 @@
+.contact-container {
+    background-color: #ffffff;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    background-color: #fdfdfd;
+    border-radius: 0 15px 15px 0;
+}
+
+.text-danger {
+    color: #ff4c24 !important; /* Màu cam đỏ chủ đạo */
+}
+
+.border-danger {
+    border-color: #ff4c24 !important;
+}
+
+.map-wrapper {
+    transition: transform 0.3s ease;
+}
+
+.map-wrapper:hover {
+    transform: scale(1.01);
+}
+
+.btn-outline-danger {
+    color: #ff4c24;
+    border-color: #ff4c24;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff4c24;
+    color: #fff;
+}
+
+.info-item a:hover {
+    text-decoration: underline !important;
+    opacity: 0.8;
+}
+
+.contact-info {
+    transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.bi {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}

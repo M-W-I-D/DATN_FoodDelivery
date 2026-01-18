@@ -1,0 +1,33 @@
+.main-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.food-main-card {
+    border: 1px solid #eee;
+}
+
+.detail-tabs .nav-link {
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.comment-scroll-area {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+/* Tùy chỉnh thanh cuộn cho chuyên nghiệp */
+.comment-scroll-area::-webkit-scrollbar {
+    width: 6px;
+}
+.comment-scroll-area::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.avatar {
+    flex-shrink: 0;
+}

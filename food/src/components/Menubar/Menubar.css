@@ -1,0 +1,117 @@
+/* =========================
+   ACTIVE MENU
+========================= */
+.active {
+    color: tomato !important;
+    font-weight: 600;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+/* =========================
+   AUTH BUTTONS
+========================= */
+
+/* ===== ĐĂNG NHẬP ===== */
+.navbar .btn-outline-primary {
+    background-color: #ffffff !important;
+    border: 2px solid #0d6efd !important;
+    color: #0d6efd !important;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.navbar .btn-outline-primary:hover {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+/* ===== ĐĂNG KÝ ===== */
+.navbar .btn-primary {
+    background-color: #ffffff !important;
+    border: 2px solid #28a745 !important;
+    color: #28a745 !important;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: #ffffff !important;
+}
+
+/* =========================
+   PROFILE
+========================= */
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.profile-icon:hover {
+    border-color: tomato;
+}
+
+/* =========================
+   PROFILE DROPDOWN
+========================= */
+.nav-profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    z-index: 1000;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    border: 1px solid #e2e2e2;
+    list-style: none;
+    min-width: 160px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+
+    /* QUAN TRỌNG */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.25s ease;
+}
+
+/* Hover vào icon HOẶC dropdown đều giữ menu */
+.navbar-profile:hover .nav-profile-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

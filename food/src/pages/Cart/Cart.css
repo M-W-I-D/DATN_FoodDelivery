@@ -1,0 +1,16 @@
+/* Cart.css */
+
+.cart-item img {
+    width: 80px; 
+    height: 80px;
+    object-fit: cover;
+}
+/* Các quy tắc sau không cần thiết hoặc gây lỗi khi dùng Bootstrap input-group */
+/* .quantity-input { 
+    width: 50px; 
+} */
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}

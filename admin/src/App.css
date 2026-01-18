@@ -1,0 +1,22 @@
+/* Tùy chỉnh giao diện React-Toastify */
+.Toastify__toast {
+    border-radius: 12px !important;
+    font-family: 'Segoe UI', sans-serif !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+.Toastify__toast--success {
+    background-color: #00b894 !important; /* Xanh ngọc chuyên nghiệp */
+}
+
+.Toastify__toast--info {
+    background-color: #0984e3 !important; /* Xanh dương đậm */
+}
+
+.Toastify__toast--error {
+    background-color: #ff7675 !important; /* Đỏ san hô */
+}
+
+.Toastify__toast--warning {
+    background-color: #fdcb6e !important; /* Vàng hổ phách */
+}

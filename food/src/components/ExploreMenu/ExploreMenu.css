@@ -1,0 +1,96 @@
+/* Container chính - Thu hẹp padding để nội dung to hơn */
+.explore-menu {
+    padding: 30px 0;
+}
+
+.explore-menu h1 {
+    color: #1a1a1a;
+    font-size: 2.2rem; /* Tăng cỡ chữ tiêu đề */
+    font-weight: 800;
+}
+
+.explore-menu p {
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Danh sách danh mục */
+.explore-menu-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px; /* Tăng khoảng cách giữa các item */
+    padding: 20px 10px 40px 10px; /* Thêm padding bottom để lộ shadow */
+    scrollbar-width: none;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Từng Item danh mục */
+.explore-menu-list-item {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Kích thước ảnh - Tăng lên 140px để lấp đầy không gian */
+.explore-menu-list-item img, 
+.explore-menu-list-item .cat-all-box {
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Shadow mịn hơn */
+    transition: all 0.4s ease;
+}
+
+/* Hiệu ứng khi được chọn (Active) */
+.active-cat {
+    border-color: #ff4d4d !important; /* Màu đỏ thương hiệu */
+    transform: scale(1.1); /* Phóng to nhẹ */
+    box-shadow: 0 15px 35px rgba(255, 77, 77, 0.25) !important;
+}
+
+/* Tên danh mục bên dưới */
+.explore-menu-list-item p {
+    margin-top: 18px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #444;
+    transition: color 0.3s;
+}
+
+.text-primary-active {
+    color: #ff4d4d !important;
+    font-weight: 800 !important;
+}
+
+/* Nút cuộn tròn xịn hơn */
+.scroll-btn {
+    width: 45px !important;
+    height: 45px !important;
+    background: #fff !important;
+    border: 1px solid #eee !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: #333 !important;
+    font-size: 1.2rem;
+}
+
+.scroll-btn:hover {
+    background: #ff4d4d !important;
+    color: #fff !important;
+    border-color: #ff4d4d !important;
+}
+
+/* Divider mờ tinh tế */
+.explore-menu hr {
+    margin: 10px 0;
+    border-top: 1px solid #f0f0f0;
+}

@@ -1,0 +1,37 @@
+/* Bao phủ toàn bộ nền trang web */
+.login-page-wrapper {
+  background: #f8f9fa; /* Màu nền nhẹ nhàng cho toàn trang */
+  min-height: 100vh;
+}
+
+/* Tùy chỉnh ảnh nền bên trong card */
+.bg-image-form {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%; /* Đảm bảo ảnh luôn cao bằng form bên cạnh */
+}
+
+/* Bo góc cho card */
+.card {
+  border-radius: 1rem;
+}
+
+/* Nút bấm đăng nhập */
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  background-color: #ff4c24;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #e03d1a;
+  transform: translateY(-2px);
+}
+
+.form-control:focus {
+  border-color: #ff4c24;
+  box-shadow: 0 0 0 0.25rem rgba(255, 76, 36, 0.25);
+}

@@ -1,0 +1,39 @@
+.food-item-card {
+    max-width: 320px;
+    border-radius: 20px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.food-item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12) !important;
+}
+
+.food-item-img-container {
+    overflow: hidden;
+    height: 200px;
+}
+
+.food-item-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.food-item-card:hover .food-item-img-container img {
+    transform: scale(1.1);
+}
+
+.text-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 38px;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,21 @@
+.admin-orders h2 {
+    color: #404040;
+}
+
+.order-item {
+    transition: 0.3s;
+    border-left: 5px solid transparent !important;
+}
+
+.order-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    border-left: 5px solid #0d6efd !important;
+}
+
+.order-item-customer p {
+    line-height: 1.4;
+}
+
+.form-select {
+    cursor: pointer;
+}

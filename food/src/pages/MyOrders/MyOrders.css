@@ -1,0 +1,27 @@
+.my-orders-order {
+    transition: transform 0.2s;
+}
+
+.my-orders-order:hover {
+    transform: scale(1.01);
+}
+
+.status-dot {
+    font-size: 14px;
+}
+
+/* Màu sắc theo trạng thái */
+.status-dot.created, .status-dot.pending { color: orange; }
+.status-dot.shipped, .status-dot.paid { color: green; }
+.status-dot.cancelled { color: red; }
+
+.btn-outline-primary {
+    border-color: #ff4c24;
+    color: #ff4c24;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff4c24;
+    border-color: #ff4c24;
+    color: white;
+}
